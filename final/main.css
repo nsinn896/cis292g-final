@@ -1,0 +1,566 @@
+* {
+    font-family:verdana, helvetica, sans-serif;
+    font-size: 100%; /*default = 16px*/
+    padding:0;
+    margin:0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    background-color:#59FFFD;
+    min-height: 100vh;
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+
+
+#myname a:link {
+    color:#3EA38B;
+    text-decoration: none;
+}
+
+#myname a:hover {
+    color:#3CF5CD;
+}
+
+#myname a:visited {
+    color: #30806D;
+    text-decoration: underline;
+}
+
+#myname a:visited:hover {
+    color:#3CF5CD;
+    text-decoration: underline;
+}
+
+#myname>a{
+    font-size: 2em;
+    font-family: Georgia, serif;
+}
+
+#header{
+    color: #034C3C;
+    text-align: center;
+}
+
+
+
+#subheader {
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+
+body {
+    background-image:url(images/water.PNG);
+    background-repeat:repeat-x;
+}
+
+#logo {
+    position:relative;
+    text-align: center;
+     /*since resizing isnt working, im going to add an inline css in the html, ive done enough troubleshooting*/
+}
+
+header {
+    margin: 25px 50px 45px 65px; /* top right bottom left; clockwise*/
+    /*border:10px inset #21D19F;*/
+    padding:40px 15px 40px 15px;
+    outline: 10px double #1F5146;
+    outline-offset: -10px;
+    border-top:10px inset #21D19F;
+    border-right:10px inset #21D19F;
+    border-bottom: 10px inset #21D19F;
+    border-left: 10px inset #21D19F;
+}
+
+.home, .contact, .gallery, .bio, header {
+    background-color:#DCF9F1; /*background-color is more specific than background*/
+}
+
+h1, h2, h3 h1>a {
+    font-family: Georgia, serif;
+}
+
+.home header {background-color:#C0F5E6;
+}
+
+.bio header {background-color:#C0F5E6; 
+}
+
+.contact header {background-color:#C0F5E6; 
+}
+
+.gallery header {background-color:#C0F5E6; 
+}
+
+
+.homelist li {
+    list-style: none;
+    border:none;
+    color:#034C3C;
+    background: none;
+    margin:25px;
+    padding:0;
+    display:block;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+#navigation, #footer {
+    background:#C0F5E6;
+    padding:25px;
+    border-top: 5px double #1F5146;
+    border-bottom: 5px double #1F5146;
+    text-align: center;
+}
+
+
+nav a  {
+    color:#0AB892;
+    text-decoration:none;
+}
+
+nav a:hover {
+    color:#3CF5CD;
+}
+
+nav a:visited:hover {
+    color:#3CF5CD;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+
+li {
+    display: inline;
+    background:#F7FFFD;
+    padding:12px;
+    border: 2px outset #0AB892;
+    text-align:center;
+}
+
+
+
+main {
+    background:#F9FFFD;
+}
+
+h3 {
+    font-size: 24px;
+    color: #034C3C;
+    text-align:center;
+    margin: 15px;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+#hyperlinktext {
+    font-size: 20px;
+    color: #034C3C;
+    text-align:center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+footer nav {
+    background:#C0F5E6;
+    border-top:5px double #1F5146;
+}
+
+#footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*if issues arise, change #footer*/
+
+
+
+footer {
+    clear:both;
+}
+
+
+
+/*biography below*/
+
+
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    font-size: 18px;
+    color: #034C3C;
+    gap: 2rem;
+    
+}
+
+.abouttext {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    line-height:23px;
+}
+
+.abouttext p {
+  margin-bottom: 2em;
+}
+
+.dance img {
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    border:5px double #3EA38B;
+}
+
+#dancecaption{
+    text-align: center;
+    font-size: 14px;
+    font-style:italic;
+    line-height:18px;
+}
+
+
+
+
+
+/*contact below*/
+
+
+.faq {
+    margin-top:10em;
+}
+
+
+#qna li {
+    list-style: none;
+    border:none;
+    color:#034C3C;
+    background-color:transparent;
+    margin:15px;
+    margin-top:20px;
+    margin-left:25px;
+    margin-right:25px;
+    padding:0;
+    display:block;
+    text-align: center;
+    font-size: 16px;
+    line-height:23px;
+}
+
+#qna h4 {
+    margin-top:5em;
+}
+
+form {
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+    font-size:20px;
+    color: #034C3C;
+    font-family:verdana, helvetica, sans-serif;
+}
+
+#mess {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#message {
+    width: 700px;
+    height: 150px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px double #21D19F;
+    border-radius: 4px;
+    background-color: #DEFAF2;
+    resize: none;
+    font-size:16px;
+    margin:20px 20px;
+    outline: none;
+    
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#fullname {
+    width: 400px;
+    height: 50px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px double #21D19F;
+    border-radius: 4px;
+    background-color: #DEFAF2;
+    resize: none;
+    font-size:16px;
+    margin:20px 20px;
+    outline: none;
+}
+
+#mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#email {
+    width: 400px;
+    height: 50px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px double #21D19F;
+    border-radius: 4px;
+    background-color: #DEFAF2;
+    resize: none;
+    font-size:16px;
+    margin:20px 20px;
+    outline: none;
+}
+
+
+input[type=submit] {
+    background-color: #1EC192;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 20px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#errors {
+    color:red;
+    font-weight:bold;
+    margin: 20px 20px;
+    line-height:40px;
+    text-align:center;
+}
+
+
+
+
+
+
+/*oh boy time for the portfolio, flexbox incoming*/
+
+
+#advocacy {
+    max-width:712px;
+    height:495.5px;
+    outline: 6px double #1F5146;
+    outline-offset: -6px;
+    border-top:6px inset #21D19F;
+    border-right:6px inset #21D19F;
+    border-bottom: 6px inset #21D19F;
+    border-left: 6px inset #21D19F;
+    border-radius: 8px;
+    margin: 35px;
+}
+
+#advocateposter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #034C3C;
+}
+
+#advocateposter p {
+    text-align:center;
+    line-height:30px;
+}
+
+
+#album {
+    outline: 6px double #1F5146;
+    outline-offset: -6px;
+    border-top:6px inset #21D19F;
+    border-right:6px inset #21D19F;
+    border-bottom: 6px inset #21D19F;
+    border-left: 6px inset #21D19F;
+    border-radius: 8px;
+    margin: 35px;
+    margin-top: 125px;
+}
+
+#albumcover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #034C3C;
+}
+
+#albumcover p {
+    text-align:center;
+    line-height:30px;
+}
+
+#august {
+    max-width:1000px;
+    height:500px;
+    outline: 6px double #1F5146;
+    outline-offset: -6px;
+    border-top:6px inset #21D19F;
+    border-right:6px inset #21D19F;
+    border-bottom: 6px inset #21D19F;
+    border-left: 6px inset #21D19F;
+    border-radius: 8px;
+    margin: 35px;
+    margin-top: 125px;
+}
+
+#augustcat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #034C3C;
+}
+
+#augustcat p {
+    text-align:center;
+    line-height:30px;
+}
+
+
+#flower {
+    max-width:967.6px;
+    height:610.6px;
+    outline: 6px double #1F5146;
+    outline-offset: -6px;
+    border-top:6px inset #21D19F;
+    border-right:6px inset #21D19F;
+    border-bottom: 6px inset #21D19F;
+    border-left: 6px inset #21D19F;
+    border-radius: 8px;
+    margin: 35px;
+    margin-top: 125px;
+}
+
+#flowerfinal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #034C3C;
+}
+
+
+#flowerfinal p {
+    text-align:center;
+    line-height:30px;
+}
+
+
+#heron {
+    max-width:410px;
+    height:525px;
+    outline: 6px double #1F5146;
+    outline-offset: -6px;
+    border-top:6px inset #21D19F;
+    border-right:6px inset #21D19F;
+    border-bottom: 6px inset #21D19F;
+    border-left: 6px inset #21D19F;
+    border-radius: 8px;
+    margin: 35px;
+    margin-top: 125px;
+}
+
+#heroncover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #034C3C;
+}
+
+#heroncover p {
+    text-align:center;
+    line-height:30px;
+}
+
+#september {
+    max-width:1000px;
+    height:500px;
+    outline: 6px double #1F5146;
+    outline-offset: -6px;
+    border-top:6px inset #21D19F;
+    border-right:6px inset #21D19F;
+    border-bottom: 6px inset #21D19F;
+    border-left: 6px inset #21D19F;
+    border-radius: 8px;
+    margin: 35px;
+    margin-top: 125px;
+}
+
+#septembercat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #034C3C;
+}
+
+#septembercat p {
+    text-align:center;
+    line-height:30px;
+}
+
+#photo {
+    max-width:733px;
+    height:483px;
+    outline: 6px double #1F5146;
+    outline-offset: -6px;
+    border-top:6px inset #21D19F;
+    border-right:6px inset #21D19F;
+    border-bottom: 6px inset #21D19F;
+    border-left: 6px inset #21D19F;
+    border-radius: 8px;
+    margin: 35px;
+    margin-top: 125px;
+}
+
+#redphotograph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #034C3C;
+}
+
+#redphotograph p {
+    text-align:center;
+    line-height:30px;
+}
+
+
